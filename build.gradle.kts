@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.ir.backend.js.compile
+
 plugins {
     kotlin("jvm") version "1.9.21"
 }
@@ -11,6 +13,7 @@ repositories {
 
 dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test")
+    runtimeOnly("org.jetbrains.kotlin:kotlin-reflect:1.9.22")
 }
 
 tasks.test {
