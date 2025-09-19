@@ -1,1 +1,5 @@
 /.idea/
+/kotlin-v-1-9-20/.gradle/
+/kotlin-v-1-9-20/.kotlin/
+/basic-examples/.gradle/
+/basic-examples/build/

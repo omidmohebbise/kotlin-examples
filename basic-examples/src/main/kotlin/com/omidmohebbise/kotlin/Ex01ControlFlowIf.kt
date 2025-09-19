@@ -1,21 +1,23 @@
-package org.example.com.omidmohebbise.kotlin
+package com.omidmohebbise.kotlin
+
+import kotlin.random.Random
 
 
 /*
  Control flow: if
  */
 fun main() {
-   var tempreture : Int = 28;
-    var isAirConditionOn: Boolean = if( tempreture > 25){
+    val temperature: Int = Random.nextInt(50);
+
+    val isAirConditionOn: Boolean = if (temperature > 25) {
         println("air conditioner must be on")
         true
-    }else{
+    } else {
         println("air conditioner must be off")
         false
     }
 
     println(isAirConditionOn)
-
 
 
 }

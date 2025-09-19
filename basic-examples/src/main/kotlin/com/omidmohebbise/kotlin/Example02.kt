@@ -1,11 +1,14 @@
 package org.example.com.omidmohebbise.kotlin
 
+import kotlin.random.Random
+import kotlin.random.nextInt
+
 
 /*
  Control flow: when
  */
 fun main() {
-   var dayOfWeek : Int = 1;
+   val dayOfWeek : Int = Random.nextInt(8);
     when(dayOfWeek){
         1 -> println("Saturday")
         2 -> println("Sunday")
@@ -18,7 +21,7 @@ fun main() {
     }
 
 
-    var risk : Int = 8
+    var risk : Int = Random.nextInt(12)
 
     when(risk){
         in 1..4 -> println("Low risk")
